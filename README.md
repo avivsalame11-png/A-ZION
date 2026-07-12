@@ -1,16 +1,37 @@
-[README.md](https://github.com/user-attachments/files/29836640/README.md)
-# A-ZION BP2-02B Full Raw Intake Archive
+# A-ZION Platform
 
-Created by ChatGPT workspace on 2026-07-08.
+A-ZION is an institutional investment intelligence operating system.
 
-Contains 143 uploaded A-ZION/AZION/a-zion artifacts preserved as raw originals.
+## Current Build
 
-Do not extract, rename, convert, summarize, or execute files until the BP2-02B archive strategy is approved.
+IE-01 Platform Skeleton
 
-Recommended repository location:
-archive/raw-intake/bp2-02b-full-upload/A-ZION_BP2-02B_FULL_RAW_INTAKE_2026-07-08.zip
+## Core Principles
 
-Included helper files:
-- MANIFEST.csv
-- MANIFEST.md
-- COPILOT_PROMPT.md
+- Asset-first architecture
+- Evidence before conclusions
+- ANR is the numerical source of truth
+- Every action is auditable
+- Engines are replaceable
+- Governance cannot be bypassed
+
+## Stack
+
+- Python
+- FastAPI
+- Pydantic
+- SQLAlchemy
+- PostgreSQL
+- Redis
+- Neo4j
+- Qdrant
+- Pytest
+- Docker
+
+## Run Dev API
+
+```bash
+cd a-zion
+pip install -r requirements.txt
+uvicorn apps.api.main:app --reload
+```
